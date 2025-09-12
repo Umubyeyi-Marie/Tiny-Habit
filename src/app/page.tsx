@@ -3,6 +3,7 @@ import Begin from "./begin";
 import Team from "./team";
 import Discover from "./discover";
 import Journey from "./journey";
+import Blog from "./blog/page"
 import Testimony from "./testimony";
 import Ready from "./ready";
 import Guide from "./guide";
@@ -17,6 +18,7 @@ export default function Home (){
       < Team />
       < Discover />
       <Journey />
+      <Blog />
       <Testimony />
       <Ready />
       <Guide />

@@ -10,7 +10,7 @@ export default function Begin() {
           
         
           <div>
-            <button className="px-4 py-2 text-sm rounded-full bg-indigo-100 text-indigo-600 mb-4">
+            <button className="px-4 py-2 sm:m-5 text-sm rounded-full bg-indigo-100 text-indigo-600 mb-4">
               Begin Your Transformative Journey
             </button>
             <h1 className="text-4xl md:text-5xl font-bold leading-snug">
