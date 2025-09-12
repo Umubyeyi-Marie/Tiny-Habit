@@ -122,7 +122,7 @@ export default function Blog() {
               key={post.id}
               className="bg-white shadow-sm rounded-lg overflow-hidden flex flex-col"
             >
-              {/* Image using Next.js Image */}
+        
               <div className="relative w-full h-48">
                 {post.imageSrc && (
                   <Image
@@ -135,7 +135,7 @@ export default function Blog() {
                 )}
               </div>
 
-              {/* Meta strip */}
+              
               <div className="flex items-center justify-between bg-white px-4 py-3">
                 <Link
                   href={post.href ?? "#"}
@@ -155,25 +155,28 @@ export default function Blog() {
 
                 <p className="mt-2 text-gray-500 text-sm flex-1">{post.excerpt}</p>
 
-                {/* Footer icons using lucide-react */}
-                <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
-                  <div className="flex items-center space-x-4">
-                    <div className="flex items-center space-x-1">
-                      <Heart className="h-5 w-5" />
-                      <span>{post.likes}</span>
-                    </div>
+                
+<div className="mt-4 flex items-center justify-between text-sm text-gray-500">
 
-                    <div className="flex items-center space-x-1">
-                      <MessageCircle className="h-5 w-5" />
-                      <span>{post.comments}</span>
-                    </div>
+  <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-1">
+      <Heart className="h-5 w-5" />
+      <span>{post.likes}</span>
+    </div>
 
-                    <div className="flex items-center space-x-1">
-                      <BookOpen className="h-5 w-5" />
-                      <span>{post.readTime}</span>
-                    </div>
-                  </div>
-                </div>
+    <div className="flex items-center space-x-1">
+      <MessageCircle className="h-5 w-5" />
+      <span>{post.comments}</span>
+    </div>
+  </div>
+
+  
+  <div className="flex items-center space-x-1">
+    <BookOpen className="h-5 w-5" />
+    <span>{post.readTime}</span>
+  </div>
+</div>
+
               </div>
             </article>
           ))}
