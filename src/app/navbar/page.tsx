@@ -72,22 +72,24 @@ export default function Navbar() {
                     </svg>
                   </button>
 
-                  
+                
                   {aboutOpen && (
-                    <div className="absolute left-1/2 top-full mt-3 w-96 -translate-x-1/2 rounded-xl bg-white dark:bg-gray-800 p-4 shadow-xl ring-1 ring-black/5 z-50">
+                    <div className="absolute  left-1/2 top-full mt-3 w-120 -translate-x-1/2 rounded-xl bg-white dark:bg-gray-800 p-4 shadow-xl ring-1 ring-black/5 z-50">
                       <div className="space-y-6">
                         
-                        <div className="relative h-32 w-full overflow-hidden rounded-md">
+                        <div className="relative h-40 w-full overflow-hidden rounded-md">
                           <Image
-                            src="/image/about/about.jpg"
+                            src="/image/about/about.jpeg"
                             alt="Team photo"
                             fill
                             sizes="384px"
                             className="object-cover"
                           />
                         </div>
-
-                        
+                        <div className="gap-2">
+                         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100"> About Tiny Steps A Day Journey </h3>
+                         <p className="mt-1  text-sm text-gray-500 dark:text-gray-300"> Discover our mission, our team, and exciting career opportunities. </p>
+                        </div>
                         <div className="flex items-start gap-3">
                           <UserRound className="w-6 h-6 text-gray-500 " />
                           <div>
