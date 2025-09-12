@@ -24,11 +24,12 @@ export default function Journey() {
 
   return (
     <section className="py-16 bg-white text-center">
-      <h2 className="text-3xl font-bold text-gray-900">
+      <h2 className="text-4xl font-bold text-gray-900">
         Your Journey With Tiny Steps A Day
       </h2>
-      <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
-        A simple, structured process designed to guide you towards meaningful transformation
+      <p className="mt-2 text-gray-600 text-lg mx-auto">
+        A simple, structured process designed to guide you towards meaningful<br />
+         transformation
       </p>
 
       <div className="mt-12 grid md:grid-cols-4 gap-10 max-w-6xl mx-auto px-6">

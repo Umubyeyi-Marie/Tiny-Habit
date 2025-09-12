@@ -29,9 +29,9 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 text-center">
-      <h2 className="text-3xl font-bold text-gray-900">Our Transformative Perks</h2>
-      <p className="mt-2 text-gray-600 max-w-3xl mx-auto">
+    <section className="py-16 bg-white text-center">
+      <h2 className="text-4xl font-bold text-gray-900">Our Transformative Perks</h2>
+      <p className="mt-2 text-gray-600 max-w-3xl mx-auto text-xl">
         Our team of experts is dedicated to provide you with comprehensive support for your personal and professional growth.
       </p>
 

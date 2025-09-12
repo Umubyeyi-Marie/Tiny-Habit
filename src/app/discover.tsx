@@ -1,4 +1,5 @@
 import { Calendar, Clock, Search, Book, User } from "lucide-react";
+import Link from "next/link";
 
 export default function DiscoverPath() {
   const items = [
@@ -10,16 +11,16 @@ export default function DiscoverPath() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 text-center">
-      <h2 className="text-3xl font-bold text-gray-900">Discover Your Path</h2>
-      <p className="mt-2 text-gray-600">
+    <section className="py-16  text-center bg-[#f4f8fc] p-10">
+      <h2 className="text-4xl font-bold text-gray-900">Discover Your Path</h2>
+      <p className="mt-2 text-xl text-gray-600">
         Take our quick quiz to find personalized courses and routines for your journey
       </p>
 
       <div className="mt-10 flex flex-wrap justify-center gap-10">
         {items.map((item, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className={`w-16 h-16 rounded-full flex items-center justify-center ${item.bg}`}>
+          <div key={index} className="flex flex-col items-center m-5">
+            <div className={`w-16 h-16 rounded-full  flex items-center justify-center ${item.bg}`}>
               {item.icon}
             </div>
             <p className="mt-3 font-medium text-gray-800">{item.label}</p>
@@ -27,10 +28,10 @@ export default function DiscoverPath() {
         ))}
       </div>
 
-      <div className="mt-8">
-        <button className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
+      <div className="mt-8 p-5">
+        <Link href="/quiz" className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
           Explore All Quizzes
-        </button>
+        </Link>
       </div>
     </section>
   );

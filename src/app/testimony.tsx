@@ -47,13 +47,13 @@ export default function Testimony() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-[#f4f8fc] py-16">
       
       <div className="text-center max-w-2xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-4xl font-bold text-gray-900">
           Transformation Stories
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-xl text-gray-600">
           Hear from individuals who have experienced profound shifts through our
           programs
         </p>
@@ -104,13 +104,13 @@ export default function Testimony() {
 
         
         <button
-          className="testimonial-prev absolute top-1/2 left-0 -translate-y-1/2 bg-white shadow  p-1  rounded-full hover:bg-purple-100 transition"
+          className="testimonial-prev absolute top-1/2 left-0 -translate-y-1/2 bg-white shadow  p-0.5  rounded-full hover:bg-purple-100 transition"
           aria-label="Previous testimonial"
         >
           ←
         </button>
         <button
-          className="testimonial-next absolute top-1/2 right-0 -translate-y-1/2 bg-white shadow p-1 rounded-full hover:bg-purple-100 transition"
+          className="testimonial-next absolute top-1/2 right-0 -translate-y-1/2 bg-white shadow p-0.5 rounded-full hover:bg-purple-100 transition"
           aria-label="Next testimonial"
         >
           →

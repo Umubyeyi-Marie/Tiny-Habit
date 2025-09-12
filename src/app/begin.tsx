@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Begin() {
   return (
     <div>
-      <section className=" min-h-screen bg-gradient-to-br from-gray-30 to-indigo-35 pb-24 md:pb-32 flex items-center">
+      <section className=" min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 pb-24 md:pb-32 flex items-center">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           
         
