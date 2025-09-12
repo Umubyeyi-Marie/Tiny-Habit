@@ -1,4 +1,5 @@
 import { User, Shield, GraduationCap, Compass } from "lucide-react";
+import Link from "next/link";
 
 export default function Team() {
   const perks = [
@@ -56,9 +57,9 @@ export default function Team() {
       </div>
 
       <div className="mt-8">
-        <button className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
+        <Link href="/programs" className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
           Explore All Programs
-        </button>
+        </Link>
       </div>
     </section>
   );

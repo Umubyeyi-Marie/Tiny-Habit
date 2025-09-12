@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Ready() {
   return (
     <section className="py-16 text-center bg-white gap-4 m-5">
@@ -8,9 +9,9 @@ export default function Ready() {
         Take the first step towards personal growth, clarity, and authentic living.
       </p>
       <div className="mt-10">
-        <button className="px-6 py-3 bg-indigo-500 text-white rounded-full shadow hover:bg-indigo-600">
+        <Link href="/quiz" className="px-6 py-3 bg-indigo-500 text-white rounded-full shadow hover:bg-indigo-600">
           Start Your Journey →
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import Journey from "./journey";
 import Testimony from "./testimony";
 import Ready from "./ready";
 import Guide from "./guide";
+import Footer from "./footer/page";
 
 
 export default function Home (){
@@ -19,6 +20,7 @@ export default function Home (){
       <Testimony />
       <Ready />
       <Guide />
+      <Footer />
     </div>
   )
 }

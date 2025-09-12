@@ -20,7 +20,7 @@ export default function DiscoverPath() {
       <div className="mt-10 flex flex-wrap justify-center gap-10">
         {items.map((item, index) => (
           <div key={index} className="flex flex-col items-center m-5">
-            <div className={`w-16 h-16 rounded-full  flex items-center justify-center ${item.bg}`}>
+            <div className={`w-24 h-24 rounded-full  flex items-center justify-center ${item.bg}`}>
               {item.icon}
             </div>
             <p className="mt-3 font-medium text-gray-800">{item.label}</p>
