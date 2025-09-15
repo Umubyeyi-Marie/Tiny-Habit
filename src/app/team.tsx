@@ -30,9 +30,9 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-16 bg-white text-center">
-      <h2 className="text-4xl font-bold text-gray-900">Our Transformative Perks</h2>
-      <p className="mt-2 text-gray-600 max-w-3xl mx-auto text-xl">
+    <section className="py-16 bg-white text-center max-w-5xl mx-auto">
+      <h2 className="text-3xl font-bold text-gray-900">Our Transformative Perks</h2>
+      <p className="mt-2 text-gray-600 max-w-3xl mx-auto text-m">
         Our team of experts is dedicated to provide you with comprehensive support for your personal and professional growth.
       </p>
 
@@ -57,7 +57,7 @@ export default function Team() {
       </div>
 
       <div className="mt-8">
-        <Link href="/programs" className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
+        <Link href="/Programs" className="px-6 py-3 bg-indigo-500 text-white rounded-md shadow hover:bg-indigo-600">
           Explore All Programs
         </Link>
       </div>

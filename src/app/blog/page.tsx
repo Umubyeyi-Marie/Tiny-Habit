@@ -155,7 +155,7 @@ export default function Blog() {
 
                 <p className="mt-2 text-gray-500 text-sm flex-1">{post.excerpt}</p>
 
-                
+                fvdg
 <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
 
   <div className="flex items-center space-x-4">

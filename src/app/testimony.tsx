@@ -47,8 +47,8 @@ export default function Testimony() {
   ];
 
   return (
-    <section className="bg-[#f4f8fc] py-16">
-      
+    <section className="bg-[#f4f8fc] py-16 ">
+      <div className="max-w-5xl mx-auto">
       <div className="text-center max-w-2xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-900">
           Transformation Stories
@@ -79,11 +79,11 @@ export default function Testimony() {
                   <div className="flex text-yellow-400 mb-3 text-2xl">
                     ★★★★★
                   </div>
-                  <p className="text-gray-700 font-semibold text-2xl leading-relaxed">
+                  <p className="text-gray-700 font-semibold text-xl leading-relaxed">
                     "{t.text}"
                   </p>
                   <div className="mt-6">
-                    <p className="font-semibold text-gray-800">{t.name}</p>
+                    <p className="font-semibold italic text-gray-800">{t.name}</p>
                     <p className="text-sm text-gray-500">{t.role}</p>
                   </div>
                 </div>
@@ -116,6 +116,7 @@ export default function Testimony() {
           →
         </button>
       </div>
+    </div>
     </section>
   );
 }

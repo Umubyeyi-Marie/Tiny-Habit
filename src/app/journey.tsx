@@ -23,11 +23,11 @@ export default function Journey() {
   ];
 
   return (
-    <section className="py-20 bg-white text-center">
-      <h2 className="text-4xl font-bold text-gray-900">
+    <section className="py-20 bg-white text-center max-w-5xl mx-auto">
+      <h2 className="text-3xl font-bold text-gray-900">
         Your Journey With Tiny Steps A Day
       </h2>
-      <p className="mt-2 text-gray-600 text-lg mx-auto">
+      <p className="mt-2 text-gray-600 text-m mx-auto">
         A simple, structured process designed to guide you towards meaningful<br />
          transformation
       </p>
@@ -35,9 +35,9 @@ export default function Journey() {
       <div className="mt-12 grid md:grid-cols-4 gap-10 max-w-6xl mx-auto px-6">
         {steps.map((step, i) => (
           <div key={i} className="text-left">
-            <h3 className="text-5xl font-bold text-black p-10">{step.number}</h3>
-            <h4 className="mt-2 font-semibold text-black text-xlg">{step.title}</h4>
-            <p className="mt-2 text-gray-600 text-m">{step.desc}</p>
+            <h3 className="text-3xl font-bold text-black p-10">{step.number}</h3>
+            <h4 className="mt-2 font-semibold text-black text-m">{step.title}</h4>
+            <p className="mt-2 text-gray-600 text-sm">{step.desc}</p>
           </div>
         ))}
       </div>
