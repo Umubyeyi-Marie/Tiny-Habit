@@ -68,13 +68,13 @@ export default function Personalize() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/schedule"
-                  className="bg-indigo-400 hover:bg-indigo-600 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-200 text-center"
+                  className="bg-indigo-400 hover:bg-indigo-600 text-white text-sm font-medium py-2 px-4 sm:p-2 rounded-full w-51 transition duration-200 text-center"
                 >
                   Schedule a Consultation
                 </Link>
                 <Link
                   href="/quiz"
-                  className="bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 text-sm font-medium py-2 px-4 rounded-full transition duration-200 text-center"
+                  className="bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 text-sm font-medium py-2 px-4 sm:p-2 rounded-full w-51 transition duration-200 text-center"
                 >
                   Take the Assessment First
                 </Link>
