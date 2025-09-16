@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from "next/link"
 
 export default function YourJourney() {
   return (
@@ -15,10 +16,10 @@ export default function YourJourney() {
            guidance
         </p>
         
-        <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 px-6 rounded-full transition duration-200 text-xs flex items-center mx-auto group">
+        <Link href = "/schedule" className="bg-indigo-400 hover:bg-indigo-700 text-white font-medium py-2 px-3 rounded-full w-52 transition duration-200 text-xs flex items-center mx-auto group">
           <span>Schedule a Free Consultation</span>
           <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-        </button>
+        </Link>
       </div>
     </div>
   );
