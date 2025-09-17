@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Clock, Users, Play, BookOpen, Lightbulb } from "lucide-react";
 
 export default function MBTIQuiz(){
@@ -30,11 +31,12 @@ export default function MBTIQuiz(){
 
         
         <div className="relative rounded-xl overflow-hidden mb-8 h-64 sm:h-80 md:h-96">
-          <img
-            src="image/quiz/people.jpeg"
-            alt="Group of people at sunset"
-            className="w-full h-full object-cover"
-          />
+            <Image
+              src="/image/quiz/people.jpeg"  
+              alt="Group of people at sunset"
+              fill                              
+              className="object-cover"         
+            />
           <div className="absolute bottom-4 left-4 flex flex-wrap items-center gap-3">
             <span className="px-3 py-1 bg-black/20 backdrop-blur-sm border border-white/30 text-white text-xs rounded-md">
               Personal Growth

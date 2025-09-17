@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Search,
   Filter,
@@ -27,6 +28,7 @@ type Quiz = {
   questions: number;
   image: string;
   categoryColor: string; 
+  link: string;
 };
 
 const quizzes: Quiz[] = [
@@ -40,6 +42,7 @@ const quizzes: Quiz[] = [
     questions: 32,
     image: "/image/quiz/people.jpeg",
     categoryColor: "bg-blue-100 text-blue-600 w-29",
+    link: "/mbti",   
   },
   {
     id: 2,
@@ -51,6 +54,7 @@ const quizzes: Quiz[] = [
     questions: 12,
     image: "/image/quiz/adhd.jpeg",
     categoryColor: "bg-red-100 text-red-600 uppercase w-30",
+     link: "adhd", 
   },
   {
     id: 3,
@@ -62,6 +66,7 @@ const quizzes: Quiz[] = [
     questions: 12,
     image: "/image/quiz/baby.webp",
     categoryColor: "bg-red-100 text-red-600 capitalize uppercase w-30",
+    link: "/hsp",
   },
   {
     id: 4,
@@ -72,6 +77,7 @@ const quizzes: Quiz[] = [
     questions: 12,
     image: "/image/quiz/intro.webp",
     categoryColor: "bg-blue-100 text-blue-600 w-37",
+    link: "/introextro",
   },
 ];
 
@@ -213,9 +219,11 @@ export default function SelfDiscoveryPage() {
               <div className={`inline-block mt-3 px-3 py-1  rounded-full text-xs font-medium ${q.categoryColor}`}>
                 {q.category}
               </div>
-              <Button className="w-full mt-4 flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600">
-                <Activity className="h-4 w-4" /> Start Quiz
-              </Button>
+                <Link href={q.link} className="mt-4">
+      <Button className="w-full flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600">
+        <Activity className="h-4 w-4" /> Start Quiz
+      </Button>
+    </Link>
             </div>
           </div>
         ))}
