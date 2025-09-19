@@ -2,13 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Clock, Users, Play, BookOpen, Lightbulb } from "lucide-react";
+import { ArrowLeft, Clock, Users, Play, Book, Lightbulb, Target, Package } from "lucide-react";
 
 export default function MBTIQuiz(){
   return (
     <div className="min-h-screen bg-gray-30">
 
-      <div className="h-16 bg-white shadow-sm"></div>
       
       <div className="max-w-5xl mx-auto px-6 sm:px-8 py-8">
         
@@ -20,12 +19,13 @@ export default function MBTIQuiz(){
         </div>
 
   
-        <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="mb-6 leading-relaxed space-y-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 ">
             Myers-Briggs Personality Type Indicator (MBTI) Assessment
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
-            Discover your unique personality type and gain insights into your preferences and behaviors
+          <p className="text-m text-gray-500 max-w-3xl leading-none  ">
+            Discover your unique personality type and gain insights into your preferences and <br/>
+            behaviors
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function MBTIQuiz(){
             
             <div className="flex flex-row sm:flex-col items-center gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-indigo-400">32</div>
+                <div className="text-2xl font-bold text-indigo-400">32</div>
                 <div className="text-sm text-gray-500">Questions</div>
               </div>
               
@@ -92,8 +92,8 @@ export default function MBTIQuiz(){
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-blue-50 rounded-lg flex-shrink-0">
-                      <div className="w-5 h-5 bg-indigo-400 rounded-full"></div>
+                    <div className="p-2 bg-gray-50 rounded-lfull">
+                      <Target className="w-5 h-5 text-indigo-500" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-sm text-gray-900">Current Assessment</h4>
@@ -102,8 +102,8 @@ export default function MBTIQuiz(){
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-indigo-50 rounded-lg flex-shrink-0">
-                      <BookOpen className="w-5 h-5 text-indigo-400" />
+                    <div className="p-2 bg-gray-50 rounded-full">
+                      <Book className="w-5 h-5 text-indigo-500" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-sm text-gray-900">Course Recommendations</h4>
@@ -114,7 +114,7 @@ export default function MBTIQuiz(){
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-indigo-50 rounded-lg flex-shrink-0">
+                    <div className="p-2 bg-indigo-50 rounded-full flex-shrink-0">
                       <Lightbulb className="w-5 h-5 text-indigo-400" />
                     </div>
                     <div>
@@ -124,8 +124,8 @@ export default function MBTIQuiz(){
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-indigo-50 rounded-lg flex-shrink-0">
-                      <div className="w-5 h-5 bg-indigo-500 rounded"></div>
+                    <div className="p-2 bg-gray-50 rounded-full">
+                      <Package className="w-5 h-5 text-indigo-500" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-sm text-gray-900">Product Suggestions</h4>
@@ -157,18 +157,18 @@ export default function MBTIQuiz(){
         
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h3 className="text-lg font-semibold  text-sm text-gray-900 mb-4">Related Topics</h3>
-              <span className="inline-block bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">
+              <span className="font-bold inline-block bg-indigo-50 text-gray-700 text-[10px] px-2 py-, rounded-md">
                 MBTI
               </span>
             </div>
 
-            <div className="bg-blue-50 border border-indigo-200 rounded-xl p-6">
-              <h3 className="text-sm font-semibold text-blue-900 mb-2">Ready to Start?</h3>
+            <div className="border border-indigo-200 rounded-xl p-6">
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Ready to Start?</h3>
               <button className="w-full flex items-center justify-center gap-2 bg-indigo-400 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg font-medium transition-colors text-xs">
                 <Play className="w-4 h-4" />
                 Begin Quiz
               </button>
-              <p className="text-xs text-blue-600 mt-3 text-center">
+              <p className="text-[10px] text-gray-600 mt-3 text-center">
                 Takes about 10-15 minutes • No registration needed
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function MBTIQuiz(){
       </div>
       
     
-      <div className="h-20 bg-white border-t border-gray-200 mt-16"></div>
+      <div className="h-10 bg-white  mt-12"></div>
     </div>
   );
 };

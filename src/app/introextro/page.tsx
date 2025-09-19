@@ -1,10 +1,12 @@
-import Personality from "./introvert-quiz/page";
+"use client";
+import Heading from "./heading/page";
 import Guide from "../guide";
 
 export default function IntrovertPage (){
     return (
         <div>
-            < Personality />
+            <Heading />
+            <Body />
             <Guide />
         </div>
     )
